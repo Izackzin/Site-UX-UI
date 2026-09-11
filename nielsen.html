@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Heurísticas de Nielsen · Guia de IHC, UX e Design de Interfaces</title>
+<style>
+:root{--bg:#f4f6fb;--card:#fff;--texto:#1f2430;--muted:#5a6272;--acento:#4f46e5;--acento-esc:#3730a3;--borda:#e2e6f0}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',system-ui,Arial,sans-serif;background:var(--bg);color:var(--texto);line-height:1.65;display:flex;flex-direction:column;min-height:100vh}
+a{color:var(--acento);text-decoration:none}
+a:hover{text-decoration:underline}
+header{background:var(--acento);color:#fff;padding:1.2rem 1.5rem}
+header h1{font-size:1.35rem;margin-bottom:.3rem}
+header p{opacity:.92;font-size:.9rem}
+nav{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.8rem}
+nav a{padding:.45rem .85rem;border-radius:.35rem;background:rgba(255,255,255,.14);color:#fff;font-size:.88rem}
+nav a:hover{background:rgba(255,255,255,.3);text-decoration:none}
+nav a.ativo{background:#fff;color:var(--acento-esc);font-weight:700}
+main{max-width:860px;margin:1.5rem auto;padding:0 1.5rem;width:100%;flex:1}
+h2{color:var(--acento-esc);margin-bottom:.5rem}
+h3{color:var(--texto);margin:1.4rem 0 .4rem}
+p{margin-bottom:.8rem}
+ul,ol{margin:0 0 .9rem 1.5rem}
+li{margin-bottom:.35rem}
+.card{background:var(--card);border:1px solid var(--borda);border-radius:.6rem;padding:1.15rem;margin-bottom:1rem;box-shadow:0 1px 3px rgba(15,23,42,.06)}
+.tag{display:inline-block;background:#eef2ff;color:var(--acento-esc);font-size:.75rem;font-weight:700;padding:.2rem .6rem;border-radius:2rem;margin-bottom:.5rem}
+.grade{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:1rem;margin-top:1rem}
+.grade a{display:block;background:var(--card);border:1px solid var(--borda);border-radius:.6rem;padding:1.1rem;color:var(--texto);transition:transform .15s,box-shadow .15s}
+.grade a:hover{transform:translateY(-3px);box-shadow:0 6px 14px rgba(15,23,42,.12);text-decoration:none;border-color:var(--acento)}
+.grade strong{color:var(--acento-esc)}
+.grade span{font-size:.85rem;color:var(--muted)}
+nav a:focus-visible,.grade a:focus-visible{outline:3px solid var(--acento);outline-offset:2px}
+.etapas{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:.8rem;margin:1rem 0}
+.etapa{background:#f8f9fe;border:1px solid var(--borda);border-radius:.5rem;padding:.8rem;text-align:center}
+.etapa b{display:block;color:var(--acento-esc)}
+.etapa span{font-size:.8rem;color:var(--muted)}
+.heuristica{background:#fff;border-left:4px solid var(--acento);border-radius:.35rem;padding:.7rem .9rem;margin-bottom:.7rem}
+.heuristica b{color:var(--acento-esc)}
+.amostra{display:inline-block;padding:.35rem .7rem;border-radius:.35rem;font-weight:700;margin:.2rem .3rem .2rem 0;font-size:.85rem}
+footer{margin:2rem auto 1rem;padding:1rem 1.5rem 0;text-align:center;color:var(--muted);font-size:.85rem;border-top:1px solid var(--borda);max-width:860px;width:100%}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Guia de IHC, UX e Design de Interfaces</h1>
+  <p>Material didático · Engenharia de Software</p>
+  <nav aria-label="Navegação principal">
+    <a href="index.html">Home</a>
+    <a href="ihc.html">IHC</a>
+    <a href="design-thinking.html">Design Thinking</a>
+    <a href="nielsen.html" class="ativo" aria-current="page">Heurísticas de Nielsen</a>
+    <a href="wcag.html">WCAG e Paletas</a>
+    <a href="ux-ui.html">UX/UI</a>
+  </nav>
+</header>
+
+<main>
+  <section class="card">
+    <span class="tag">Tema 3</span>
+    <h2>Heurísticas de Usabilidade de Nielsen</h2>
+    <p>Criadas por <strong>Jakob Nielsen</strong> em 1994, as 10 heurísticas são princípios gerais de usabilidade usados para avaliar e melhorar interfaces — de forma rápida, sem precisar de testes com usuários.</p>
+    <div class="heuristica"><b>1. Visibilidade do status do sistema</b><br>
+    O sistema deve sempre informar o que está acontecendo. <i>Ex.: barra de progresso ao enviar um arquivo.</i></div>
+    <div class="heuristica"><b>2. Correspondência entre o sistema e o mundo real</b><br>
+    Usar linguagem e conceitos familiares ao usuário. <i>Ex.: ícone de lixeira para excluir.</i></div>
+    <div class="heuristica"><b>3. Controle e liberdade do usuário</b><br>
+    Permitir desfazer ações e "sair" facilmente. <i>Ex.: botão "desfazer" após excluir um e-mail.</i></div>
+    <div class="heuristica"><b>4. Consistência e padrões</b><br>
+    Manter elementos e comportamentos iguais em todo o sistema. <i>Ex.: mesmo botão de busca em todas as páginas.</i></div>
+    <div class="heuristica"><b>5. Prevenção de erros</b><br>
+    Evitar que o erro aconteça. <i>Ex.: botão de envio desabilitado em formulário incompleto.</i></div>
+    <div class="heuristica"><b>6. Reconhecer em vez de relembrar</b><br>
+    Tornar ações e opções visíveis. <i>Ex.: menu com todas as opções, em vez de comandos decorados.</i></div>
+    <div class="heuristica"><b>7. Flexibilidade e eficiência de uso</b><br>
+    Oferecer atalhos para usuários avançados. <i>Ex.: Ctrl+C e Ctrl+V para copiar e colar.</i></div>
+    <div class="heuristica"><b>8. Design estético e minimalista</b><br>
+    Mostrar só o que é relevante. <i>Ex.: página de login sem informações desnecessárias.</i></div>
+    <div class="heuristica"><b>9. Ajudar a reconhecer, diagnosticar e recuperar-se de erros</b><br>
+    Mensagens claras, com causa e solução. <i>Ex.: "Caminho inválido — verifique a pasta e tente novamente."</i></div>
+    <div class="heuristica"><b>10. Ajuda e documentação</b><br>
+    Prover ajuda acessível quando necessária. <i>Ex.: texto-guia em tela de check-out.</i></div>
+  </section>
+</main>
+
+<footer>Guia de IHC, UX e Design de Interfaces · Engenharia de Software · Material acadêmico</footer>
+
+</body>
+</html>

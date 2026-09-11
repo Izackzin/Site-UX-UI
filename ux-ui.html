@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UX/UI · Guia de IHC, UX e Design de Interfaces</title>
+<style>
+:root{--bg:#f4f6fb;--card:#fff;--texto:#1f2430;--muted:#5a6272;--acento:#4f46e5;--acento-esc:#3730a3;--borda:#e2e6f0}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',system-ui,Arial,sans-serif;background:var(--bg);color:var(--texto);line-height:1.65;display:flex;flex-direction:column;min-height:100vh}
+a{color:var(--acento);text-decoration:none}
+a:hover{text-decoration:underline}
+header{background:var(--acento);color:#fff;padding:1.2rem 1.5rem}
+header h1{font-size:1.35rem;margin-bottom:.3rem}
+header p{opacity:.92;font-size:.9rem}
+nav{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.8rem}
+nav a{padding:.45rem .85rem;border-radius:.35rem;background:rgba(255,255,255,.14);color:#fff;font-size:.88rem}
+nav a:hover{background:rgba(255,255,255,.3);text-decoration:none}
+nav a.ativo{background:#fff;color:var(--acento-esc);font-weight:700}
+main{max-width:860px;margin:1.5rem auto;padding:0 1.5rem;width:100%;flex:1}
+h2{color:var(--acento-esc);margin-bottom:.5rem}
+h3{color:var(--texto);margin:1.4rem 0 .4rem}
+p{margin-bottom:.8rem}
+ul,ol{margin:0 0 .9rem 1.5rem}
+li{margin-bottom:.35rem}
+.card{background:var(--card);border:1px solid var(--borda);border-radius:.6rem;padding:1.15rem;margin-bottom:1rem;box-shadow:0 1px 3px rgba(15,23,42,.06)}
+.tag{display:inline-block;background:#eef2ff;color:var(--acento-esc);font-size:.75rem;font-weight:700;padding:.2rem .6rem;border-radius:2rem;margin-bottom:.5rem}
+.grade{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:1rem;margin-top:1rem}
+.grade a{display:block;background:var(--card);border:1px solid var(--borda);border-radius:.6rem;padding:1.1rem;color:var(--texto);transition:transform .15s,box-shadow .15s}
+.grade a:hover{transform:translateY(-3px);box-shadow:0 6px 14px rgba(15,23,42,.12);text-decoration:none;border-color:var(--acento)}
+.grade strong{color:var(--acento-esc)}
+.grade span{font-size:.85rem;color:var(--muted)}
+nav a:focus-visible,.grade a:focus-visible{outline:3px solid var(--acento);outline-offset:2px}
+.etapas{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:.8rem;margin:1rem 0}
+.etapa{background:#f8f9fe;border:1px solid var(--borda);border-radius:.5rem;padding:.8rem;text-align:center}
+.etapa b{display:block;color:var(--acento-esc)}
+.etapa span{font-size:.8rem;color:var(--muted)}
+.heuristica{background:#fff;border-left:4px solid var(--acento);border-radius:.35rem;padding:.7rem .9rem;margin-bottom:.7rem}
+.heuristica b{color:var(--acento-esc)}
+.amostra{display:inline-block;padding:.35rem .7rem;border-radius:.35rem;font-weight:700;margin:.2rem .3rem .2rem 0;font-size:.85rem}
+footer{margin:2rem auto 1rem;padding:1rem 1.5rem 0;text-align:center;color:var(--muted);font-size:.85rem;border-top:1px solid var(--borda);max-width:860px;width:100%}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Guia de IHC, UX e Design de Interfaces</h1>
+  <p>Material didático · Engenharia de Software</p>
+  <nav aria-label="Navegação principal">
+    <a href="index.html">Home</a>
+    <a href="ihc.html">IHC</a>
+    <a href="design-thinking.html">Design Thinking</a>
+    <a href="nielsen.html">Heurísticas de Nielsen</a>
+    <a href="wcag.html">WCAG e Paletas</a>
+    <a href="ux-ui.html" class="ativo" aria-current="page">UX/UI</a>
+  </nav>
+</header>
+
+<main>
+  <section class="card">
+    <span class="tag">Tema 5</span>
+    <h2>UX/UI no Desenvolvimento de Interfaces</h2>
+
+    <h3>UX — User Experience (Experiência do Usuário)</h3>
+    <p>É a disciplina responsável por garantir que a interação do usuário com o produto seja <strong>útil, simples e satisfatória</strong>. Não é sobre a tela, é sobre a jornada.</p>
+    <ul>
+      <li><strong>Foco no usuário:</strong> entende dores, necessidades e comportamentos por meio de pesquisa.</li>
+      <li><strong>Criação de personas e jornadas:</strong> mapeia quem é o usuário e o caminho que percorre.</li>
+      <li><strong>Arquitetura da Informação:</strong> organiza o conteúdo de forma lógica e fácil de encontrar.</li>
+      <li><strong>Usabilidade e testes:</strong> valida as soluções com testes reais para eliminar atritos.</li>
+    </ul>
+
+    <h3>UI — User Interface (Interface do Usuário)</h3>
+    <p>É a camada visual e interativa pela qual o usuário se comunica com o sistema. É o que torna a <strong>estratégia do UX tangível</strong>.</p>
+    <ul>
+      <li><strong>Design Visual:</strong> definição de paleta de cores, tipografia, ícones e espaçamentos.</li>
+      <li><strong>Hierarquia e consistência:</strong> guia o olhar do usuário e mantém um padrão em todas as telas.</li>
+      <li><strong>Componentes interativos:</strong> criação de botões, menus, formulários e estados de interação.</li>
+      <li><strong>Estética funcional:</strong> une beleza com clareza para que a interface seja agradável e compreensível.</li>
+    </ul>
+
+    <h3>Como UX/UI são aplicadas no desenvolvimento</h3>
+    <ul>
+      <li><strong>Papel do UX:</strong> atua no início do projeto — levanta requisitos do negócio, pesquisa o público, cria fluxos de navegação, wireframes e protótipos de baixa fidelidade para validar a lógica antes do código.</li>
+      <li><strong>Papel do UI:</strong> dá vida ao que foi estruturado pelo UX — transforma wireframes em telas de alta fidelidade, aplica a identidade visual, define o Design System e usa microinterações e animações para dar feedback ao usuário.</li>
+      <li><strong>Trabalho em conjunto:</strong> UX e UI não funcionam isolados — usam Design Thinking e metodologias ágeis para alinhar tecnologia, objetivos de negócio e necessidades reais do usuário.</li>
+    </ul>
+
+    <h3>Estado da arte — o que mudou nos últimos 5 anos</h3>
+    <p>Hoje, UX/UI deixou de ser apenas "deixar bonito". Virou <strong>fator decisivo para a retenção e o sucesso do produto</strong>. O foco atual é em experiências inteligentes, personalizadas e inclusivas.</p>
+    <ol>
+      <li><strong>De operacional para estratégico:</strong> antes o designer fazia telas; hoje, com a IA generativa automatizando parte do trabalho visual, o profissional atua de forma estratégica, focado em problemas de negócio e métricas de resultado.</li>
+      <li><strong>IA, hiperpersonalização e Zero UI:</strong> IA generativa e interfaces preditivas; produtos que se adaptam ao usuário em tempo real; interfaces por voz (VUI), gestos e sensores, onde a tela nem sempre é necessária — conceito de Zero UI.</li>
+      <li><strong>Acessibilidade como ponto de partida:</strong> o que antes era checklist no final do projeto, hoje é requisito inicial — WCAG, contraste, leitor de tela e navegação por teclado nascem no planejamento, não como correção.</li>
+      <li><strong>Pesquisa contínua (Continuous Discovery):</strong> fim dos ciclos longos de pesquisa só no início — a coleta de dados, testes A/B e o feedback do usuário acontecem de forma contínua e integrada ao desenvolvimento ágil.</li>
+    </ol>
+  </section>
+</main>
+
+<footer>Guia de IHC, UX e Design de Interfaces · Engenharia de Software · Material acadêmico</footer>
+
+</body>
+</html>
