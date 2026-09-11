@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home · Guia de IHC, UX e Design de Interfaces</title>
+<style>
+:root{--bg:#f4f6fb;--card:#fff;--texto:#1f2430;--muted:#5a6272;--acento:#4f46e5;--acento-esc:#3730a3;--borda:#e2e6f0}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',system-ui,Arial,sans-serif;background:var(--bg);color:var(--texto);line-height:1.65;display:flex;flex-direction:column;min-height:100vh}
+a{color:var(--acento);text-decoration:none}
+a:hover{text-decoration:underline}
+header{background:var(--acento);color:#fff;padding:1.2rem 1.5rem}
+header h1{font-size:1.35rem;margin-bottom:.3rem}
+header p{opacity:.92;font-size:.9rem}
+nav{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.8rem}
+nav a{padding:.45rem .85rem;border-radius:.35rem;background:rgba(255,255,255,.14);color:#fff;font-size:.88rem}
+nav a:hover{background:rgba(255,255,255,.3);text-decoration:none}
+nav a.ativo{background:#fff;color:var(--acento-esc);font-weight:700}
+main{max-width:860px;margin:1.5rem auto;padding:0 1.5rem;width:100%;flex:1}
+h2{color:var(--acento-esc);margin-bottom:.5rem}
+h3{color:var(--texto);margin:1.4rem 0 .4rem}
+p{margin-bottom:.8rem}
+ul,ol{margin:0 0 .9rem 1.5rem}
+li{margin-bottom:.35rem}
+.card{background:var(--card);border:1px solid var(--borda);border-radius:.6rem;padding:1.15rem;margin-bottom:1rem;box-shadow:0 1px 3px rgba(15,23,42,.06)}
+.tag{display:inline-block;background:#eef2ff;color:var(--acento-esc);font-size:.75rem;font-weight:700;padding:.2rem .6rem;border-radius:2rem;margin-bottom:.5rem}
+.grade{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:1rem;margin-top:1rem}
+.grade a{display:block;background:var(--card);border:1px solid var(--borda);border-radius:.6rem;padding:1.1rem;color:var(--texto);transition:transform .15s,box-shadow .15s}
+.grade a:hover{transform:translateY(-3px);box-shadow:0 6px 14px rgba(15,23,42,.12);text-decoration:none;border-color:var(--acento)}
+.grade strong{color:var(--acento-esc)}
+.grade span{font-size:.85rem;color:var(--muted)}
+nav a:focus-visible,.grade a:focus-visible{outline:3px solid var(--acento);outline-offset:2px}
+.etapas{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:.8rem;margin:1rem 0}
+.etapa{background:#f8f9fe;border:1px solid var(--borda);border-radius:.5rem;padding:.8rem;text-align:center}
+.etapa b{display:block;color:var(--acento-esc)}
+.etapa span{font-size:.8rem;color:var(--muted)}
+.heuristica{background:#fff;border-left:4px solid var(--acento);border-radius:.35rem;padding:.7rem .9rem;margin-bottom:.7rem}
+.heuristica b{color:var(--acento-esc)}
+.amostra{display:inline-block;padding:.35rem .7rem;border-radius:.35rem;font-weight:700;margin:.2rem .3rem .2rem 0;font-size:.85rem}
+footer{margin:2rem auto 1rem;padding:1rem 1.5rem 0;text-align:center;color:var(--muted);font-size:.85rem;border-top:1px solid var(--borda);max-width:860px;width:100%}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Guia de IHC, UX e Design de Interfaces</h1>
+  <p>Material didático · Engenharia de Software</p>
+  <nav aria-label="Navegação principal">
+    <a href="index.html" class="ativo" aria-current="page">Home</a>
+    <a href="ihc.html">IHC</a>
+    <a href="design-thinking.html">Design Thinking</a>
+    <a href="nielsen.html">Heurísticas de Nielsen</a>
+    <a href="wcag.html">WCAG e Paletas</a>
+    <a href="ux-ui.html">UX/UI</a>
+  </nav>
+</header>
+
+<main>
+  <section class="card">
+    <h2>Bem-vindo(a) ao guia</h2>
+    <p>Este site reúne cinco temas fundamentais para quem projeta e desenvolve interfaces digitais: <strong>Interação Humano-Computador (IHC)</strong>, <strong>Design Thinking</strong>, <strong>Heurísticas de Nielsen</strong>, <strong>WCAG e paletas de cores</strong> e <strong>UX/UI no desenvolvimento de interfaces</strong>.</p>
+    <p>Escolha um tema abaixo para abrir a página correspondente.</p>
+    <div class="grade">
+      <a href="ihc.html"><strong>IHC</strong><br><span>O que é e por que importa na interação humano-computador.</span></a>
+      <a href="design-thinking.html"><strong>Design Thinking</strong><br><span>As 5 etapas de um processo centrado no usuário.</span></a>
+      <a href="nielsen.html"><strong>Heurísticas de Nielsen</strong><br><span>As 10 regras de usabilidade de Jakob Nielsen.</span></a>
+      <a href="wcag.html"><strong>WCAG e Paletas</strong><br><span>Acessibilidade web, contraste e escolha de cores.</span></a>
+      <a href="ux-ui.html"><strong>UX/UI</strong><br><span>Experiência e interface trabalhando juntas.</span></a>
+    </div>
+  </section>
+</main>
+
+<footer>Guia de IHC, UX e Design de Interfaces · Engenharia de Software · Material acadêmico</footer>
+
+</body>
+</html>
