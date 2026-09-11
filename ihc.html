@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IHC · Guia de IHC, UX e Design de Interfaces</title>
+<style>
+:root{--bg:#f4f6fb;--card:#fff;--texto:#1f2430;--muted:#5a6272;--acento:#4f46e5;--acento-esc:#3730a3;--borda:#e2e6f0}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',system-ui,Arial,sans-serif;background:var(--bg);color:var(--texto);line-height:1.65;display:flex;flex-direction:column;min-height:100vh}
+a{color:var(--acento);text-decoration:none}
+a:hover{text-decoration:underline}
+header{background:var(--acento);color:#fff;padding:1.2rem 1.5rem}
+header h1{font-size:1.35rem;margin-bottom:.3rem}
+header p{opacity:.92;font-size:.9rem}
+nav{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.8rem}
+nav a{padding:.45rem .85rem;border-radius:.35rem;background:rgba(255,255,255,.14);color:#fff;font-size:.88rem}
+nav a:hover{background:rgba(255,255,255,.3);text-decoration:none}
+nav a.ativo{background:#fff;color:var(--acento-esc);font-weight:700}
+main{max-width:860px;margin:1.5rem auto;padding:0 1.5rem;width:100%;flex:1}
+h2{color:var(--acento-esc);margin-bottom:.5rem}
+h3{color:var(--texto);margin:1.4rem 0 .4rem}
+p{margin-bottom:.8rem}
+ul,ol{margin:0 0 .9rem 1.5rem}
+li{margin-bottom:.35rem}
+.card{background:var(--card);border:1px solid var(--borda);border-radius:.6rem;padding:1.15rem;margin-bottom:1rem;box-shadow:0 1px 3px rgba(15,23,42,.06)}
+.tag{display:inline-block;background:#eef2ff;color:var(--acento-esc);font-size:.75rem;font-weight:700;padding:.2rem .6rem;border-radius:2rem;margin-bottom:.5rem}
+.grade{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:1rem;margin-top:1rem}
+.grade a{display:block;background:var(--card);border:1px solid var(--borda);border-radius:.6rem;padding:1.1rem;color:var(--texto);transition:transform .15s,box-shadow .15s}
+.grade a:hover{transform:translateY(-3px);box-shadow:0 6px 14px rgba(15,23,42,.12);text-decoration:none;border-color:var(--acento)}
+.grade strong{color:var(--acento-esc)}
+.grade span{font-size:.85rem;color:var(--muted)}
+nav a:focus-visible,.grade a:focus-visible{outline:3px solid var(--acento);outline-offset:2px}
+.etapas{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:.8rem;margin:1rem 0}
+.etapa{background:#f8f9fe;border:1px solid var(--borda);border-radius:.5rem;padding:.8rem;text-align:center}
+.etapa b{display:block;color:var(--acento-esc)}
+.etapa span{font-size:.8rem;color:var(--muted)}
+.heuristica{background:#fff;border-left:4px solid var(--acento);border-radius:.35rem;padding:.7rem .9rem;margin-bottom:.7rem}
+.heuristica b{color:var(--acento-esc)}
+.amostra{display:inline-block;padding:.35rem .7rem;border-radius:.35rem;font-weight:700;margin:.2rem .3rem .2rem 0;font-size:.85rem}
+footer{margin:2rem auto 1rem;padding:1rem 1.5rem 0;text-align:center;color:var(--muted);font-size:.85rem;border-top:1px solid var(--borda);max-width:860px;width:100%}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Guia de IHC, UX e Design de Interfaces</h1>
+  <p>Material didático · Engenharia de Software</p>
+  <nav aria-label="Navegação principal">
+    <a href="index.html">Home</a>
+    <a href="ihc.html" class="ativo" aria-current="page">IHC</a>
+    <a href="design-thinking.html">Design Thinking</a>
+    <a href="nielsen.html">Heurísticas de Nielsen</a>
+    <a href="wcag.html">WCAG e Paletas</a>
+    <a href="ux-ui.html">UX/UI</a>
+  </nav>
+</header>
+
+<main>
+  <section class="card">
+    <span class="tag">Tema 1</span>
+    <h2>Interação Humano-Computador (IHC)</h2>
+    <p><strong>IHC</strong> é a área de estudo que investiga como as pessoas interagem com sistemas computacionais e como projetar essas interações para que sejam <strong>eficientes, agradáveis e seguras</strong>. Não se trata apenas da tela: envolve o contexto de uso, as tarefas, as capacidades e as limitações humanas.</p>
+    <h3>Principais objetivos</h3>
+    <ul>
+      <li><strong>Usabilidade:</strong> facilidade de aprender, usar e lembrar como operar o sistema.</li>
+      <li><strong>Experiência do usuário (UX):</strong> sensação geral — satisfação, prazer e confiança.</li>
+      <li><strong>Acessibilidade:</strong> garantir que pessoas com diferentes habilidades possam usar o produto.</li>
+      <li><strong>Segurança e confiabilidade:</strong> prevenir erros e minimizar as consequências de falhas.</li>
+    </ul>
+    <h3>Breve histórico</h3>
+    <ul>
+      <li><strong>Década de 1980:</strong> consolidação do campo, com as interfaces gráficas (GUI).</li>
+      <li><strong>Anos 1990–2000:</strong> a web populariza a disciplina e as heurísticas de usabilidade.</li>
+      <li><strong>Anos 2010 em diante:</strong> dispositivos móveis, toque, voz e interfaces conversacionais.</li>
+    </ul>
+    <h3>Áreas relacionadas</h3>
+    <p>Psicologia cognitiva, design gráfico, engenharia de software, ergonomia, antropologia e ciência da computação — IHC é, por natureza, multidisciplinar. No desenvolvimento de software, aplicar IHC reduz retrabalho, treinamento e erros operacionais.</p>
+  </section>
+</main>
+
+<footer>Guia de IHC, UX e Design de Interfaces · Engenharia de Software · Material acadêmico</footer>
+
+</body>
+</html>
